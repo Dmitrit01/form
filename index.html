@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Анкета о себе</title>
+</head>
+<body>
+      <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <form action="get" class="header__form">
+                    <h1>Заполните анкету о себе:</h1>
+                    <label for="name">
+                        <p>Введите имя:</p><input id="name" type="text" placeholder="введите имя" name="name" required>
+                    </label>
+                    <label for="surname">
+                        <p>Введите фамилию:</p><input id="surname" type="text" placeholder="введите фамилию" name="surname" required>
+                    </label>
+                    <label for="phone">
+                        <p>Введите номер телефона:</p><input id="phone" type="tel" placeholder="введите номер телефона" name="phone" required>
+                    </label>
+                    <label for="date">
+                        <p>Введите дату рождения:</p><input id="date" type="date" placeholder="введите номер телефона" name="date" required>
+                    </label>
+                    <label for="number">
+                        <p>Выберите любимое число от 1 до 100</p><input id="number" type="number" placeholder="выберите число" name="number" required min="0" max="100">
+                    </label>
+                    <label for="color">
+                        <p>Выберите любимый цвет</p><input id="color" type="color" placeholder="выберите цвет" name="color" value="#e66465" required>
+                    </label>
+                    <label for="english">
+                        <p>Выберите ваш уровень английского языка</p>
+                        <select name="english" id="english">
+                            <option value="Beginner">начальный (Beginner)</option>
+                            <option value="Elementary">элементарный, базовый (Elementary)</option>
+                            <option value="Pre-Intermediate">ниже среднего (Pre-Intermediate)</option>
+                            <option value="Intermediate">средний (Intermediate)</option>
+                            <option value="Upper-Intermediate">выше среднего (Upper-Intermediate)</option>
+                            <option value="Advanced">продвинутый (Advanced)</option>
+                            <option value="Proficiency">профессиональный (Proficiency)</option>
+                        </select>
+                    </label>
+                    <div class="header__box">
+                        <p>Выберите любимый язык программирования:</p>
+                        <div class="header__radio">
+                           <div class="radio-columm">
+                                <label for="js" class="radio-label"><p class="radio__text">javascript<input type="radio" id="js" name="programm" value="js" checked></p></label>
+                                <label for="java" class="radio-label"><p class="radio__text">java<input type="radio" id="java" name="programm" value="java"></p></label>
+                            </div>
+                           <div class="radio-columm">
+                                <label for="php" class="radio-label"><p class="radio__text">php<input type="radio" id="php" name="programm" value="php"></p></label>
+                                <label for="python" class="radio-label"><p class="radio__text">python<input type="radio" id="python" name="programm" value="python"></p></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__box">
+                        <p>Ваши любимы хобби:</p>
+                        <div class="header__radio">
+                           <div class="radio-columm">
+                                <label for="sport" class="radio-label"><p class="radio__text">cпорт<input type="checkbox" id="sport" name="sport" value="hobby" checked></p></label>
+                                <label for="draw" class="radio-label"><p class="radio__text">рисование<input type="checkbox" id="draw" name="draw" value="hobby"></p></label>
+                            </div>
+                           <div class="radio-columm">
+                                <label for="song" class="radio-label"><p class="radio__text">пение<input type="checkbox" id="song" name="song" value="hobby"></p></label>
+                                <label for="cook" class="radio-label"><p class="radio__text">чтение<input type="checkbox" id="cook" name="cook" value="hobby"></p></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__person">
+                        <p>Расскажите дополнительно о себе:</p>
+                        <textarea name="person" id="person" cols="60" rows="5" placeholder="О себе"></textarea>
+                    </div>
+                    <button type="reset" class="button">сбросить</button>
+                    <button type="submit" class="button">отправить</button>
+                    
+                </form>
+            </div>
+        </div>
+      </header>
+</body>
+</html>
